@@ -23,7 +23,7 @@ let initPosY = canvasHeight * 0.8;
 const init = () => {
     canvas.width = Number(window.getComputedStyle(game).width.replace("px", ""));
     canvas.height = Number(window.getComputedStyle(game).height.replace("px", ""));
-
+    console.log(Number(window.getComputedStyle(game).width.replace("px", "")));
     canvasWidth = canvas.width;
     canvasHeight = canvas.height;
 
