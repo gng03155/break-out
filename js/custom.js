@@ -14,6 +14,9 @@ const ctx = canvas.getContext('2d');
 canvas.width = game.clientWidth;
 canvas.height = game.clientHeight;
 
+console.log(game.clientWidth);
+console.log(game.clientHeight);
+
 const canvasWidth = canvas.width;
 const canvasHeight = canvas.height;
 
