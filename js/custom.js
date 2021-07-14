@@ -14,22 +14,11 @@ const ctx = canvas.getContext('2d');
 canvas.width = Number(window.getComputedStyle(game).width.replace("px", ""));
 canvas.height = Number(window.getComputedStyle(game).height.replace("px", ""));
 
-let canvasWidth = canvas.width;
-let canvasHeight = canvas.height;
+const canvasWidth = canvas.width;
+const canvasHeight = canvas.height;
 
-let initPosX = canvasWidth / 2;
-let initPosY = canvasHeight * 0.8;
-
-const init = () => {
-    canvas.width = Number(window.getComputedStyle(game).width.replace("px", ""));
-    canvas.height = Number(window.getComputedStyle(game).height.replace("px", ""));
-    console.log(Number(window.getComputedStyle(game).width.replace("px", "")));
-    canvasWidth = canvas.width;
-    canvasHeight = canvas.height;
-
-    initPosX = canvasWidth / 2;
-    initPosY = canvasHeight * 0.8;
-}
+const initPosX = canvasWidth / 2;
+const initPosY = canvasHeight * 0.8;
 
 const mainColor = "#f0f0f0";
 const subColor = "#0095dd";
@@ -409,7 +398,6 @@ const main = () => {
     canvas.addEventListener("mousemove", (e) => {
         paddle.x = e.offsetX;
     });
-    init();
     reset();
     drawGame();
     startBtn.addEventListener("click", () => startGame());
