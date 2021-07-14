@@ -14,6 +14,8 @@ const ctx = canvas.getContext('2d');
 canvas.width = Number(window.getComputedStyle(game).width.replace("px", ""));
 canvas.height = Number(window.getComputedStyle(game).height.replace("px", ""));
 
+console.log(Number(window.getComputedStyle(game).width.replace("px", "")));
+
 const canvasWidth = canvas.width;
 const canvasHeight = canvas.height;
 
