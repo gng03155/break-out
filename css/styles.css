@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0095dd;
+}
+
+.wrap h1 {
+  height: 200px;
+  line-height: 200px;
+  font-size: 100px;
+  font-family: 'Girassol', cursive;
+}
+
+.game {
+  position: relative;
+  width: 1000px;
+  height: 60%;
+  border: 15px solid black;
+  border-bottom: 0;
+}
+
+.game .game-cnt {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+.game .game-cnt span {
+  font-size: 18px;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+.game .game-clear {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+.game .game-clear h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.game button.start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
+.game button.end-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  display: none;
+}
+
+.game .game-stop {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  display: none;
+}
+
+canvas {
+  background: #f0f0f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
