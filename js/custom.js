@@ -199,22 +199,24 @@ const checkBrick = (x, y) => {
                 continue;
             }
 
-            if (x >= brick.x && x <= brick.x + brick.width) {
+            if (x + ballSize >= brick.x && x - ballSize <= brick.x + brick.width) {
                 if (y - ballSize <= brick.y + brick.height &&
                     y - ballSize >= brick.y) {
-                    if (x - ballSize <= brick.x || x + ballSize >= brick.x + brick.width) {
+                    if (x <= brick.x || x >= brick.x + brick.width) {
                         bumped = true;
                         isSide = true;
                     }
                     else {
                         bumped = true;
                     }
-                } else if (y + ballSize >= brick.y &&
+                }
+                else if (y + ballSize >= brick.y &&
                     y + ballSize <= brick.y + brick.height) {
                     bumped = true;
                 }
             }
             if (bumped) {
+                // debugger;
                 if (isSide) {
                     breakType = "BRICKSIDE";
                 } else {
